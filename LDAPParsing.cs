@@ -1,4 +1,6 @@
- public string[] ParseLDAP(string fileName)
+//Reads and parses text delimited list into List object. 
+
+public List<Employee> ParseLDAP(string fileName)
  {
             try
             {
@@ -22,6 +24,6 @@
             }
             catch (Exception ex)
             {
-            
+              throw new InvalidOperationException();
             }
  }
